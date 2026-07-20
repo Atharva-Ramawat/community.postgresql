@@ -175,9 +175,9 @@ attributes:
     support: partial
     details:
       - The module is not idempotent when O(state=dump) — it always invokes C(pg_dump) and writes
-        the C(target) file, reporting RV(changed=true) on every invocation.
+        the C(target) file, reporting C(changed=true) on every invocation.
       - The module is not idempotent when O(state=restore) — it always executes the contents of the
-        C(target) file against the database and reports RV(changed=true).
+        C(target) file against the database and reports C(changed=true).
 
 author: "Ansible Core Team"
 

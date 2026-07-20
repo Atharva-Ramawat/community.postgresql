@@ -178,7 +178,7 @@ notes:
   You may not specify password or role_attr_flags when the V(PUBLIC) user is specified.
 - SCRAM-SHA-256-hashed passwords (SASL Authentication) require PostgreSQL version 10 or newer.
   On the previous versions the whole hashed string is used as a password.
-- 'Working with SCRAM-SHA-256-hashed passwords, be sure you use the O(environment): variable
+- 'Working with SCRAM-SHA-256-hashed passwords, be sure you use the C(environment): variable
   C(PGOPTIONS: "-c password_encryption=scram-sha-256") when it is not default
   for your PostgreSQL version (see the provided example).'
 - On some systems (such as AWS RDS), C(pg_authid) is not accessible, thus, the module cannot compare

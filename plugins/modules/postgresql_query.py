@@ -52,7 +52,7 @@ options:
     description:
     - Execute in autocommit mode when the query can't be run inside a transaction block
       (e.g., VACUUM).
-    - Mutually exclusive with O(check_mode).
+    - Mutually exclusive with C(check_mode).
     type: bool
     default: false
   encoding:
@@ -90,7 +90,7 @@ attributes:
       - The module executes arbitrary user-supplied SQL commands and cannot determine whether a given query
         would modify state. For non-read-only queries, state change is set based on the PostgreSQL
         C(statusmessage) heuristic (e.g., C(INSERT)/C(UPDATE)/C(DELETE) with non-zero affected rows
-        report RV(changed=true), regardless of the state which existed before the query execution).
+        report C(changed=true), regardless of the state which existed before the query execution).
 
 author:
 - Felix Archambault (@archf)
