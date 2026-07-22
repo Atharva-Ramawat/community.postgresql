@@ -130,7 +130,7 @@ options:
     default: ''
   dump_extra_args:
     description:
-      - Provides additional arguments when O(state) is C(dump).
+      - Provides additional arguments when O(state) is V(dump).
       - Cannot be used with dump-file-format-related arguments like ``--format=d``.
     type: str
     version_added: '0.2.0'
