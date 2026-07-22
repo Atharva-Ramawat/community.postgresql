@@ -101,7 +101,7 @@ options:
   target:
     description:
     - File to back up or restore from.
-    - Used when O(state) is V(dump) or C(restore).
+    - Used when O(state) is V(dump) or V(restore).
     type: path
     default: ''
   target_opts:
